@@ -1,0 +1,9 @@
+const express = require('express'); // chamando o metodo express
+
+const app = express(); //adicionando o mesmo dentro da minha variavel app
+
+app.get('/', (request, response) => {
+    return response.send('Hello Word')
+});
+
+app.listen(3333); // chamando o listen para ouvir a porta 3333
